@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thuc_hanh_CSS</title>
+</head>
+<style>
+    * {
+        padding : 0px;
+        margin : auto;
+    }
+    .wrapper {
+        height: 700px; 
+        width: 1089px; 
+        background-color: antiquewhite;
+    }
+    header {
+        height: 150px; 
+        width: 1089px; 
+        background-color: blueviolet;
+        background-image: url(../tuan3/image/header.jpg);
+    }
+    nav {
+        height: 50px;
+        width: 1089px;
+        background-color: darksalmon;
+    }
+    body { background-image: url(../tuan3/image/header.jpg);}
+    .menu li {
+        height: 100%; 
+        width: 217px;
+        background-color: darkgray;
+        float: left;
+        line-height : 50px;
+        list-style: none;
+        text-indent: 15px;
+        position: relative;
+    }
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: yellow;
+    }
+    .menu li:hover {
+        background-color: aqua;
+    }
+    li:hover>a {
+        font-weight: bold;
+        font-style: italic;
+        color: crimson;
+    }
+    .menu li .submenu{
+        display: none;
+        position: absolute;
+
+    }
+    .menu li:hover .submenu {
+        display: block;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <header></header>
+        <nav>
+            <ul class="menu">
+                <li><a href="">item 1</a>
+                    <ul class="submenu">
+                        <li><a href="">submit 1</a></li>
+                        <li><a href="">submit 2</a></li>
+                        <li><a href="">submit 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="">item 2</a></li>
+                <li><a href="">item 3</a></li>
+                <li><a href="">item 4</a></li>
+                <li><a href="">item 5</a></li>
+            </ul>
+        </nav>
+        <div class="content"></div>
+        <footer></footer>
+    </div>
+</body>
+</html>
